@@ -1,2 +1,2 @@
-# main
-Test repository
+# git_practice
+A test repository.
