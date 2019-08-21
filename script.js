@@ -5,6 +5,15 @@ class Cat {
 		this._color = color
 	}
 
+	meow() {
+		const noises = ['Meow.', 'Meeeoow!', 'Meow?', 'MEEEOOWWW!'];
+		return Math.floor(Math.random * noises.length);
+	}
+
+	purr() {
+		return '*purr*';
+	}
+
 	get name() {
 		return this._name;
 	}
@@ -35,3 +44,4 @@ class Cat {
 
 const testCat = new Cat('Eddie', 5, 'White');
 console.log(testCat.name);
+console.log('AAAAAAAAAAAAAAAAAAAA');
