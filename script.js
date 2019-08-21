@@ -14,6 +14,10 @@ class Cat {
 		return '*purr*';
 	}
 
+	hiss() {
+		return 'Hiss!!!';
+	}
+
 	get name() {
 		return this._name;
 	}
