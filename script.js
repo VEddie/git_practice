@@ -3,6 +3,7 @@ class Cat {
 		this._name = name,
 		this._age = age
 		this._color = color
+		this._weight = 3;
 	}
 
 	meow() {
@@ -18,6 +19,10 @@ class Cat {
 		return 'Hiss!!!';
 	}
 
+	eat() {
+		this._weight += 0.25;
+	}
+
 	get name() {
 		return this._name;
 	}
@@ -28,6 +33,10 @@ class Cat {
 
 	get color() {
 		return this._color;
+	}
+
+	get weight() {
+		return this._weight;
 	}
 
 	set name(newName) {
@@ -47,5 +56,10 @@ class Cat {
 }
 
 const testCat = new Cat('Eddie', 5, 'White');
-console.log(testCat.name);
-console.log('AAAAAAAAAAAAAAAAAAAA');
+
+console.log(testCat.meow());
+console.log(testCat.meow());
+console.log(testCat.meow());
+testCat.eat();
+testCat.eat();
+console.log(testCat.weight)
